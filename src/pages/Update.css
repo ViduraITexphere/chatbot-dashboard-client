@@ -1,0 +1,122 @@
+.update__container {
+  margin: 0 auto;
+  width: 800px;
+  color: #303030;
+  margin-top: 100px;
+}
+.update__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.update__wrapper {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.update__wrapper form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.update__wrapper input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-top: 10px;
+  color: #303030;
+  font-family: "Inter", sans-serif;
+}
+.update__wrapper textarea {
+  width: 100%;
+  height: 200px;
+  padding: 8px;
+  border: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin-top: 10px;
+  color: #303030;
+}
+
+.update__container h1 {
+  font-size: 20px;
+}
+
+.update__container button {
+  padding: 10px 20px;
+  background-color: #303030;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.button__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom__button__wrapper .delete__button {
+  padding: 10px 10px;
+  width: fit-content;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e51c00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.bottom__button__wrapper .back__button {
+  padding: 10px 10px;
+  width: fit-content;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.bottom__button__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
