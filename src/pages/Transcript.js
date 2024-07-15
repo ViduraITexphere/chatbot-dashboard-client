@@ -16,8 +16,14 @@ const Transcript = () => {
 
       try {
         const response = await fetch(
-          // `http://localhost:3001/api/transcripts?objectId=${objectId}`
-          `https://chatbot-transcript-get-server.vercel.app/api/transcripts?objectId=${objectId}`
+          `https://chatbot-transcript-get-server.vercel.app/api/transcripts?objectId=${objectId}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            mode: "cors", // Ensure CORS mode is set
+          }
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
