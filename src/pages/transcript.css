@@ -231,6 +231,10 @@ input[type="date"] {
 
 .accordion-content {
   padding: 16px;
+  max-height: 300px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #fff; /* Set background color */
+  border-top: 1px solid #e0e0e0;
 }
 
 .note-input {
@@ -261,7 +265,7 @@ input[type="date"] {
 }
 
 .message {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .delete-button {

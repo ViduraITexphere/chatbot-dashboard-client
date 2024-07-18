@@ -76,7 +76,7 @@ const Transcript = () => {
     if (!readStatus[sessionId]) {
       try {
         const response = await fetch(
-          `http://localhost:5000/transcripts/${sessionId}/read`,
+          `https://chatbot-transcript-server.vercel.app/transcripts/${sessionId}/read`,
           {
             method: "PUT",
             headers: {
@@ -116,7 +116,7 @@ const Transcript = () => {
   const handleDelete = async (sessionId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/transcripts/${sessionId}`, // Updated URL without /api
+        `https://chatbot-transcript-server.vercel.app/transcripts/${sessionId}`,
         {
           method: "DELETE",
           headers: {
@@ -147,7 +147,8 @@ const Transcript = () => {
   const addNoteToTranscript = async (sessionId, note) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/transcripts/${sessionId}/note`,
+        // `http://localhost:5000/transcripts/${sessionId}/note`,
+        `https://chatbot-transcript-server.vercel.app/transcripts/${sessionId}/note`,
         {
           method: "POST",
           headers: {
@@ -219,7 +220,6 @@ const Transcript = () => {
             <div className="accordion-content">
               {transcript.transcripts.map((session, idx) => (
                 <div className="session" key={idx}>
-                  <strong>Transcript ID:</strong> {session._id}
                   {session.transcript.map((message, msgIdx) => (
                     <div className="message" key={msgIdx}>
                       <strong>{message.sender}:</strong> {message.message}
